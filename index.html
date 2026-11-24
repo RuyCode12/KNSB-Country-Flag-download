@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ダウンロード</title>
+</head>
+<body>
+  <p>自動でダウンロードを開始します。</p>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const a = document.createElement("a");
+      a.href = "pack.zip";
+      a.download = "pack.zip";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    });
+  </script>
+</body>
+</html>
